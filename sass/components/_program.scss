@@ -63,6 +63,10 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 822px) {
+    align-items: flex-end;
+  }
 }
 
 .title {
@@ -131,6 +135,18 @@ img {
   @media screen and (min-width: 822px) {
     display: none;
   }
+}
+
+.button-read {
+  display: none;
+}
+
+.is-open .button-read {
+  display: block;
+}
+
+.is-open .button-less {
+  display: none;
 }
 
 .program__benefits--list {

@@ -71,6 +71,12 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 822px) {
+  .program__container {
+    align-items: flex-end;
+  }
+}
+
 .title {
   font-family: Caveat Brush, sans-serif;
   font-size: 24px;
@@ -148,6 +154,18 @@ img {
   .program__button {
     display: none;
   }
+}
+
+.button-read {
+  display: none;
+}
+
+.is-open .button-read {
+  display: block;
+}
+
+.is-open .button-less {
+  display: none;
 }
 
 .program__benefits--list {
