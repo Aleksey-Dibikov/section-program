@@ -99,7 +99,7 @@ img {
 
 @media screen and (max-width: 634.98px) {
   .program__grid:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 }
 
