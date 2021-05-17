@@ -1,2 +1,6 @@
 @import './vendors/modern-normalize';
-@import './components/program';
+@import './base/common.scss';
+@import './components/button';
+@import './components/social';
+@import './layouts/program';
+@import './layouts/header';
