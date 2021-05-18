@@ -3,6 +3,16 @@
   padding: 8px 0;
   justify-content: flex-end;
   align-items: center;
+
+  @media screen and (min-width: 635px) {
+    padding: 25px 0;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 822px) {
+    padding: 30px 0;
+    justify-content: flex-start;
+  }
 }
 
 .logo {
@@ -10,12 +20,34 @@
   height: 43px;
   color: #2e2520;
   margin-right: 67px;
+
+  @media screen and (min-width: 822px) {
+    margin-right: 38px;
+  }
 }
 
 .menu__icon {
   width: 30px;
   height: 16px;
   fill: #2e2520;
+
+  @media screen and (min-width: 822px) {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+
+  @media screen and (max-width: 821.98px) {
+    display: none;
+  }
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .hero {
@@ -23,6 +55,11 @@
   flex-direction: column;
   align-items: center;
   padding: 25px 0;
+
+  @media screen and (min-width: 635px) {
+    padding: 15px 0;
+    align-items: flex-start;
+  }
 }
 
 .hero__title {
@@ -32,9 +69,30 @@
   line-height: 1.267;
   text-align: center;
   color: #2e2520;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 635px) {
+    width: calc(100% / 6 * 2.5);
+    text-align: start;
+  }
+
+  @media screen and (min-width: 822px) {
+    width: calc(100% / 8 * 5);
+    font-size: 64px;
+    line-height: 1.016;
+  }
 }
 
 .master {
   font-weight: 500;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 635px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 822px) {
+    font-size: 24px;
+    line-height: 1.208;
+  }
 }

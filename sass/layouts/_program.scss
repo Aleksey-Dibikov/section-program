@@ -9,6 +9,18 @@
   }
 }
 
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-container__bloc {
+  @media screen and (min-width: 635px) {
+    flex-basis: calc((100% - 20px * 2) / 2);
+  }
+}
+
 .title {
   font-family: Caveat Brush, sans-serif;
   font-size: 24px;
@@ -45,7 +57,7 @@
   }
 }
 
-.benefits--title {
+.program-benefits__title {
   margin: 0;
   font-size: 18px;
   line-height: 1.28;
@@ -94,7 +106,7 @@
   display: none;
 }
 
-.program__benefits--list {
+.program-benefits__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -112,7 +124,7 @@
   }
 }
 
-.program__benefits--item {
+.program-benefits__item {
   position: relative;
 
   display: flex;
@@ -155,14 +167,14 @@
   }
 }
 
-.benefits--img {
+.program-benefits__img {
   position: absolute;
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
 }
 
-.benefits--note {
+.program-benefits__note {
   margin-top: 13px;
   margin-bottom: 13px;
   text-align: center;
